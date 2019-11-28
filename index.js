@@ -9,7 +9,7 @@ axios.get( 'http://api.openweathermap.org/data/2.5/forecast?id=5913490&units=met
     //tomorrow.setDate(tomorrow.getDate() + i); //can't figure out how to set local time instead to format 2019-month-day
     //console.log(tomorrow); 
     console.log(response.data.list[i].main.temp);
-   document.write(response.data.list[i].main.temp);
+   //document.write(response.data.list[i].main.temp);
   }
   //console.log(response.data.list[1].main.temp);
 });
