@@ -5,8 +5,9 @@ axios.get( 'http://api.openweathermap.org/data/2.5/forecast?id=5913490&units=met
 .then((response) => {
   var i;
   for ( i = 0; i < 5; i ++) {
-    console.log(response.list. + i +"main.temp");
+    console.log(response.data.list[i].main.temp);
   }
+  //console.log(response.data.list[1].main.temp);
   //window.document.write(response.data.main.temp);
 });
 
