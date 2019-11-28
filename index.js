@@ -6,10 +6,10 @@ axios.get( 'http://api.openweathermap.org/data/2.5/forecast?id=5913490&units=met
   var i;
   for ( i = 0; i < 5; i ++) {
     var tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate());
-    console.log(tomorrow);
+    tomorrow.setDate(tomorrow.getDate() + i); //can't figure out how to set local time instead to format 2019-month-day
+    console.log(tomorrow); 
     console.log(response.data.list[i].main.temp);
-    //document.write(response.data.main.temp);
+   // document.write(response.data.list[i].main.temp);
   }
   //console.log(response.data.list[1].main.temp);
 });
