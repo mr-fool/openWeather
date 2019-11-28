@@ -1,4 +1,11 @@
-//const axios = require('axios');
+function loaded() {
+  document.getElementById("weatherform").addEventListener("submit",
+          function(event) {
+              event.preventDefault();    
+          }
+  );
+
+window.addEventListener("load", loaded, false);
 
 // Open a new connection, using the GET request on the URL endpoint
 axios.get( 'http://api.openweathermap.org/data/2.5/forecast?q=Calgary,CA&units=metric&cnt=5&APPID=769ad0392e215e9ef6e05f7e41a22700')
