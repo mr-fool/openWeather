@@ -3,7 +3,8 @@ function loaded() {
           function(event) {
               event.preventDefault();
               var city = document.getElementById('city');
-              var country = document.getElementById('country');
+              var countryCode = document.getElementById('countryCode');
+              var day = moment().format("MMM Do YY");
               // Open a new connection, using the GET request on the URL endpoint
               axios.get( 'http://api.openweathermap.org/data/2.5/forecast?q='+ city.value + "," + countryCode.value + '&units=metric&cnt=5&APPID=769ad0392e215e9ef6e05f7e41a22700')
               .then((response) => {
