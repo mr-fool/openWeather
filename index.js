@@ -9,7 +9,7 @@ function loaded() {
               .then((response) => {
                 var i;
                 for ( i = 0; i < 5; i ++) {
-                  var tomorrow = new Date();
+                  //var tomorrow = new Date();
                   //tomorrow.setDate(tomorrow.getDate() + i); //can't figure out how to set local time instead to format 2019-month-day
                   //console.log(tomorrow); 
                   var day = i + 1;
